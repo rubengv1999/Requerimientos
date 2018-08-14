@@ -3,6 +3,8 @@ package com.example.ruben.login;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -31,7 +33,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.security.KeyStore;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
@@ -72,28 +76,26 @@ public class LoginActivity extends AppCompatActivity  {
             }
         });
 
-        Button mFrogetPassword = (Button) findViewById(R.id.forgetPassword);
-        mFrogetPassword.setOnClickListener(new OnClickListener() {
+        Button mForgetPassword = (Button) findViewById(R.id.forgetPassword);
+        mForgetPassword.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 forgetPassword();
             }
         });
+
+
     }
 
 
-    private void forgetPassword()
-    {
-        TextView t = (TextView) findViewById(R.id.textView1);
-        t.setText("Olvide mi contraseña");
+    private void forgetPassword() {
         Intent ListSong = new Intent(getApplicationContext(), ForgetPassword.class);
         startActivity(ListSong);
 
     }
 
-
     private void attemptLogin() {
-
+        boolean failure = false;
         mEmailView.setError(null);
         mPasswordView.setError(null);
 
@@ -101,18 +103,41 @@ public class LoginActivity extends AppCompatActivity  {
         String password = mPasswordView.getText().toString();
 
         if (TextUtils.isEmpty(password)) {
-            mPasswordView.setError(getString(R.string.error_field_required));
+            mPasswordView.setError("Este campo es requerido");
+            failure = true;
         } else if (!isPasswordValid(password)) {
-            mPasswordView.setError(getString(R.string.error_invalid_password));
+            mPasswordView.setError("La contraseña es demasiado corta");
+            failure = true;
         }
 
         if (TextUtils.isEmpty(email)) {
-            mEmailView.setError(getString(R.string.error_field_required));
+            mEmailView.setError("Este campo es requerido");
+            failure = true;
         } else if (!isEmailValid(email)) {
-            mEmailView.setError(getString(R.string.error_invalid_email));
+            mEmailView.setError("Este correo no es válido");
+            failure = true;
+        }
+
+        if(User.isBlocked()){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Este usuario está bloqueado por exceder 3 intentos fallidos").setTitle("Bloqueo");
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // User clicked OK button
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+            failure = true;
         }
         TextView t = (TextView) findViewById(R.id.textView1);
-        t.setText("Acabo de iniciar sesión");
+        if (!failure && isLoginValid(email, password)){
+            t.setText("Ingreso Autorizado");
+        }else{
+            t.setText("Ingreso No Autorizado");
+            User.setFailures(User.getFailures() + 1);
+            User.setLastAttempt(Calendar.getInstance());
+        }
 
     }
 
@@ -124,10 +149,10 @@ public class LoginActivity extends AppCompatActivity  {
         return password.length() > 4;
     }
 
-
-
-
-
+    private boolean isLoginValid (String email, String password){
+        //In the real application this should access the user database
+        return email.equals(User.getEmail()) && password.equals(User.getPassword());
+    }
 
 }
 
