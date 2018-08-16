@@ -79,6 +79,7 @@ public class ForgetPassword extends AppCompatActivity{
                 dialog.show();
 
             }catch(Exception ex){
+                /*
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage("No se pudo enviar el correo").setTitle("Alerta");
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -88,6 +89,7 @@ public class ForgetPassword extends AppCompatActivity{
                 });
                 AlertDialog dialog = builder.create();
                 dialog.show();
+                */
             }
             Intent ListSong = new Intent(getApplicationContext(), ChangePassword.class);
             startActivity(ListSong);
