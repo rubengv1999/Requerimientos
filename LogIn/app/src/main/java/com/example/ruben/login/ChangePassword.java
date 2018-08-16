@@ -66,22 +66,21 @@ public class ChangePassword extends AppCompatActivity {
             builder.setMessage("Cambio de Contraseña Exitoso").setTitle("Felicidades");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-                    // User clicked OK button
+                    exit();
                 }
             });
             AlertDialog dialog = builder.create();
             dialog.show();
-            exit();
+
         }else{
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage("Cambio de Contraseña sin Éxito").setTitle("Error");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-                    // User clicked OK button
+
                 }
             });
-            AlertDialog dialog = builder.create();
-            dialog.show();
+
         }
     }
 
