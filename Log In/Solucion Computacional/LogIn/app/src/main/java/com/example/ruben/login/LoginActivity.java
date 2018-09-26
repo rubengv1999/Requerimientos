@@ -132,7 +132,9 @@ public class LoginActivity extends AppCompatActivity  {
         }
         TextView t = (TextView) findViewById(R.id.textView1);
         if (!failure && isLoginValid(email, password)){
-            t.setText("Ingreso Autorizado");
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            //builder.setMessage(User.encryptedPassword).setTitle("Contraseña Encriptada");
+            t.setText(User.encryptedPassword);
         }else{
             t.setText("Ingreso No Autorizado");
             User.setFailures(User.getFailures() + 1);
@@ -150,8 +152,9 @@ public class LoginActivity extends AppCompatActivity  {
     }
 
     private boolean isLoginValid (String email, String password){
+
         //In the real application this should access the user database
-        return email.equals(User.getEmail()) && password.equals(User.getPassword());
+        return email.equals(User.getEmail()) && User.validPassword(password);
     }
 
 }

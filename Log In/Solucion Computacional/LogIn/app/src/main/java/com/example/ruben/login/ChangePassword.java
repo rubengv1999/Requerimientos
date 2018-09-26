@@ -61,7 +61,7 @@ public class ChangePassword extends AppCompatActivity {
             mPasswordB.setError(null);
         }
         if (!failure) {
-            User.setPassword(passwordA);
+            User.encryptedPassword = User.cipher.encrypt(passwordA);
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage("Cambio de Contraseña Exitoso").setTitle("Felicidades");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

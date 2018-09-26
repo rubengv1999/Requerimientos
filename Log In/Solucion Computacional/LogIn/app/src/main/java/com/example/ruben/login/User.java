@@ -6,12 +6,17 @@ import java.util.Date;
 
 public class User {
     private static String email = "fakemailalonso@gmail.com";
-    private static String password = "fakepassword";
+    //private static String password = "fakepassword";
+
+    public static RSA cipher = new RSA(1024);
+    public static String encryptedPassword = cipher.encrypt("fakepassword");
+
     private static int publicKeyOne;
     private static BigInteger publicKeyTwo;
     private static int privateKey;
     private static int failures = 0;
     private static Calendar lastAttempt = null;
+    private static boolean isPasswordReady = true;
 
     public static String getEmail(){
         return email;
@@ -19,14 +24,6 @@ public class User {
 
     public static void setEmail(String email){
         User.email = email;
-    }
-
-    public static String getPassword(){
-        return password;
-    }
-
-    public static void setPassword(String password){
-        User.password = password;
     }
 
     public static Calendar getLastAttempt(){
@@ -78,5 +75,14 @@ public class User {
         BigInteger M = publicKeyTwo.modPow(BigInteger.valueOf(privateKey),
                 BigInteger.valueOf(publicKeyOne));
         return M.toByteArray().toString();
+    }
+
+    public static boolean validPassword(String password){
+        if (!isPasswordReady){
+            encryptedPassword = cipher.encrypt("fakepassword");
+            isPasswordReady = true;
+
+        }
+        return password.equals(cipher.decrypt(encryptedPassword));
     }
 }
