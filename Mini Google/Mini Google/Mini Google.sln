@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mini Google", "Mini Google\Mini Google.csproj", "{49531BE2-D3DF-47F9-B407-6BC9F68689CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49531BE2-D3DF-47F9-B407-6BC9F68689CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49531BE2-D3DF-47F9-B407-6BC9F68689CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49531BE2-D3DF-47F9-B407-6BC9F68689CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49531BE2-D3DF-47F9-B407-6BC9F68689CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72A75D1A-1C50-4845-B856-28601F481BDB}
+	EndGlobalSection
+EndGlobal

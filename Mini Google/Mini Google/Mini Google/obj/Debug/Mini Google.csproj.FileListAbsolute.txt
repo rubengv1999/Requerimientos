@@ -1,0 +1,73 @@
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Mini Google.dll.config
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Mini Google.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Mini Google.pdb
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\csc.exe
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\csc.exe.config
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\csc.rsp
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\csi.exe
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\csi.exe.config
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\csi.rsp
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.AppContext.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Console.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.IO.Compression.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.Claims.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.ValueTuple.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\vbc.exe
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\vbc.exe.config
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\vbc.rsp
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\VBCSCompiler.exe
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Antlr3.Runtime.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Newtonsoft.Json.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\System.Web.Optimization.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\WebGrease.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\System.Web.Optimization.xml
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Newtonsoft.Json.xml
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Antlr3.Runtime.pdb
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\obj\Debug\Mini Google.csproj.CoreCompileInputs.cache
+C:\Users\ruben\source\repos\Mini Google\Mini Google\obj\Debug\Mini Google.csproj.CopyComplete
+C:\Users\ruben\source\repos\Mini Google\Mini Google\obj\Debug\Mini Google.dll
+C:\Users\ruben\source\repos\Mini Google\Mini Google\obj\Debug\Mini Google.pdb
+C:\Users\ruben\source\repos\Mini Google\Mini Google\obj\Debug\Mini Google.csprojAssemblyReference.cache
